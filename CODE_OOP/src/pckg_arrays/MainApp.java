@@ -1,5 +1,6 @@
 package pckg_arrays;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class MainApp {
@@ -25,8 +26,15 @@ public class MainApp {
 ////       ints[10] = 1000;
 //        changeElement(names, 2);
 //        System.out.println(names[2]);
-        populateStringNames(names);
-        listElements(names);
+//        populateStringNames(names);
+//        listElements(names);
+        int[] arr1 = {23, 56, 78, 0, -124, 57, 543, 78, -98, 32};
+        int[] arr2 = Arrays.copyOfRange(arr1, 2, 5);
+        System.out.println(arr1);
+        System.out.println(arr2);
+        System.out.println(Arrays.toString(arr1));
+        System.out.println(Arrays.toString(arr2));
+
 
     }
 
@@ -59,5 +67,7 @@ public class MainApp {
             System.out.println("Name: " + names[k]);
         }
     }
+
+
 
 }
