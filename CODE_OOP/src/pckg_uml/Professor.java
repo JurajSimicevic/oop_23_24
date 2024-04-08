@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class Professor extends Person {
 
     private ArrayList <Student> students;
+    private Student student;
 
     public Professor(String name, String surname) {
 
@@ -13,9 +14,9 @@ public class Professor extends Person {
         System.out.println(this.getClass().getSimpleName() + "constructor called!");
     }
 
-//    public void setStudent(Student student){
-//        this.student = student;
-//    }
+    public void setStudent(Student student){
+        this.student = student;
+    }
 
     public void performConsulation(){
         System.out.println(this.getClass().getSimpleName() + " gives consultative lectures to the students...");
