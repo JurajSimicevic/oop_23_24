@@ -2,7 +2,7 @@ package pckg_outsource_vecera;
 
 public class Desert {
 
-    String naziv;
+    private String naziv;
     int kol;
 
 

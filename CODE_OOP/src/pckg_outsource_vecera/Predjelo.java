@@ -2,9 +2,9 @@ package pckg_outsource_vecera;
 
 public class Predjelo {
 
-    String naziv;
-    String vrsta;
-    int kol;
+    protected String naziv;
+    protected String vrsta;
+    protected int kol;
 
 
     public Predjelo(String naziv, String vrsta, int kol) {

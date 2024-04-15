@@ -10,9 +10,8 @@ public class Vecera {
         Predjelo predjelo = new Predjelo("Cezar", "salata", 3);
         Glavno_jelo glavno  = new Glavno_jelo();
         Desert desert = new Desert("Sladoled dupli", 2);
-        predjelo.pojediPredjelo();
-        float cijena = glavno.totalPrice();
-        predjelo.kojaKolicina();
+        PredjeloNovo predjelNovo = new PredjeloNovo("Grčka", "Salata", 1);
+
 
     }
 }

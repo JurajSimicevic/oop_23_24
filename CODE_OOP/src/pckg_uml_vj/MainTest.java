@@ -4,12 +4,8 @@ import java.text.ParseException;
 
 public class MainTest {
 
-    public static void main(String[] args) {
-        try{
-            Vehicle veh1 = new Vehicle("BMW", "M5", "23/11/2020.");
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
+    public static void main(String[] args) throws ParseException {
+        Vehicle v1 = new Vehicle("BMW", "M5", "20/05/2003.");
+        System.out.println(v1);
     }
-
 }

@@ -10,8 +10,6 @@ public class Student extends Person{
     }
 
 
-
-
     public void askQuestion() {
 
         System.out.println("Student: " + this.name + " *asks question*");
