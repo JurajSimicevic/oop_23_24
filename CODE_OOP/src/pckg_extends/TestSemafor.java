@@ -8,7 +8,7 @@ public class TestSemafor {
         System.out.println(semafor);
         semafor.giveSemaforStatus();
         semafor.putSemaforForInWork();
-        hacker.changeSemaforCodes("010");
+        hacker.changeSemaforCodes("101");
         semafor.putSemaforForInWork();
 
     }

@@ -22,17 +22,7 @@ public class Semafor {
         this.code = this.zeleno + this.zuto + this.crveno;
     }
 
-    private boolean checkCode(){
-        for (String inCode : CODES){
-            if(code.equals(inCode)){
-                return true;
-            }
-        }
-        return false;
-    }
-
     public void giveSemaforStatus(){
-        if (checkCode()){
             switch (code){
                 case "100":
                     System.out.println("Zeleno je: Prođi -->"); break;
@@ -41,18 +31,26 @@ public class Semafor {
                 case "001":
                     System.out.println("Crveno je: Stani!!!"); break;
                 default:
-                    System.out.println("Greška koje neće biti!");
-
+                    System.out.println("Pogrešan kod semafora! - Unesite ispravan kod"); break;
             }
-        } else {
-            System.out.println("Pogrešan kod semafora - unesite ispravan kod!");
-        }
     }
 
     public void putSemaforForInWork(){
         int cnt = 0;
+        switch (this.code){
+            case "100":
+                break;
+            case "010":
+                cnt++;
+                break;
+            case "001":
+                cnt += 2;
+                break;
+        }
         while(cnt<10){
+            int idx = cnt%3;
             giveSemaforStatus();
+            System.out.println(idx);
             this.code = CODES[(cnt+1)%3];
             cnt++;
         }

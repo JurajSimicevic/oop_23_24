@@ -5,8 +5,6 @@ public class Hacker {
     private Semafor semafor;
 
     public Hacker() {
-
-
     }
 
     public Hacker (Semafor semafor){
