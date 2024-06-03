@@ -1,4 +1,4 @@
-package pckg_coll_2;
+package pckg_collections_2;
 
 import java.util.Comparator;
 

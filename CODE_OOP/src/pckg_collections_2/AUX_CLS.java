@@ -1,10 +1,6 @@
-package pckg_coll_2;
+package pckg_collections_2;
 
-import com.sun.jdi.Value;
-
-import java.security.Key;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ThreadLocalRandom;
